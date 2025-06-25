@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIView {
-    func addCenteredImageView(imageName: String, widthMultiplier: CGFloat = 0.4, topOffset: CGFloat = 0.25) -> UIImageView {
+    func addCenteredImageView(imageName: String, widthMultiplier: CGFloat = 0.4, topOffset: CGFloat = 0.2) -> UIImageView {
         
         let imageView = UIImageView()
         imageView.image = UIImage(named: imageName)
@@ -27,7 +27,7 @@ extension UIView {
             imageView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: widthMultiplier),
             imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: aspectRatio)
         ])
-        
+
         return imageView
     }
 }
