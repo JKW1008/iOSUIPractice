@@ -12,7 +12,7 @@ extension UIView {
         
         let titleLabel = UILabel()
         titleLabel.text = title
-        titleLabel.font = UIFont.systemFont(ofSize: self.bounds.width * 0.06, weight: .heavy)
+        titleLabel.font = UIFont.systemFont(ofSize: self.bounds.width * 0.055, weight: .heavy)
         titleLabel.textColor = .black
         titleLabel.textAlignment = .center
         titleLabel.translatesAutoresizingMaskIntoConstraints = false

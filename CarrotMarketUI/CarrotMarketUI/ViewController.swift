@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     var imageView: UIImageView!
     var titleLabel: UILabel!
     var subtitleLabel: UILabel!
+    var startButton: UIButton!
     
     override func viewDidLoad() {
         
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
         
         titleLabel = labels.titleLabel
         subtitleLabel = labels.subtitleLabel
+        startButton = view.addStartButton()
     }
 }
 
