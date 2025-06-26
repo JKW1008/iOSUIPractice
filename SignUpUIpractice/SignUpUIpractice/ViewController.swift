@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     var imageView: UIImageView!
     var titleLabel: UILabel!
     var subtitleLabel: UILabel!
+    var textIput: UITextField!
+    var messageButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +30,10 @@ class ViewController: UIViewController {
         
         titleLabel = labels.titleLabel
         subtitleLabel = labels.subtitleLabel
+        textIput = view.addTextField(placeholder: "휴대폰 번호(-없이 숫자만 입력)", subtitleLabel: subtitleLabel, topSpacingRatio: 0.02)
+        messageButton = view.addMessageButton(title: "인증문자 받기", topSpacingRatio: 0.02, textField: textIput)
         
-        
+        view.addForgetAccountLabel(title: "휴대폰 번호가 변경되었나요?", subTitle: " 이메일로 계정 찾기", button: messageButton, titleSpacingRatio: 0.035)
     }
 }
 
