@@ -42,6 +42,4 @@ extension UIView {
         ])
         return startButton
     }
-    
-    
 }
