@@ -17,6 +17,18 @@ extension UIView {
         startButton.layer.cornerRadius = 10
         startButton.translatesAutoresizingMaskIntoConstraints = false
         
+        startButton.addAction(UIAction { _ in print("Button tpped!")}, for: .touchUpInside)
+        
+        startButton.addAction(UIAction { _ in
+            // 한 줄로 ViewController 찾기
+            if let vc = self.next?.next as? UIViewController {
+                let alert = UIAlertController(title: "당근마켓",
+                                            message: "시작하기!",
+                                            preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "확인", style: .default))
+                vc.present(alert, animated: true)
+            }
+        }, for: .touchUpInside)
         self.addSubview(startButton)
         
         let buttonHeight: CGFloat = self.bounds.height * 0.06
@@ -30,4 +42,6 @@ extension UIView {
         ])
         return startButton
     }
+    
+    
 }

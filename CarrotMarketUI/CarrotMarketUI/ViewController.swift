@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         titleLabel = labels.titleLabel
         subtitleLabel = labels.subtitleLabel
         startButton = view.addStartButton()
+        
+        view.addLoginLabel(title: "이미 계정이 있나요?", subTitle: " 로그인", button: startButton)
     }
 }
 
