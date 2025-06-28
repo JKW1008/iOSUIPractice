@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		EF6108CD2E10436C00CB3B0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF6108AE2E10436A00CB3B0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6108B52E10436A00CB3B0A;
+			remoteInfo = AggreForMessage;
+		};
+		EF6108D72E10436C00CB3B0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF6108AE2E10436A00CB3B0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6108B52E10436A00CB3B0A;
+			remoteInfo = AggreForMessage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF6108B62E10436A00CB3B0A /* AggreForMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AggreForMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6108CC2E10436C00CB3B0A /* AggreForMessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AggreForMessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6108D62E10436C00CB3B0A /* AggreForMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AggreForMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EF6108DE2E10436C00CB3B0A /* Exceptions for "AggreForMessage" folder in "AggreForMessage" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EF6108B52E10436A00CB3B0A /* AggreForMessage */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EF6108B82E10436A00CB3B0A /* AggreForMessage */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EF6108DE2E10436C00CB3B0A /* Exceptions for "AggreForMessage" folder in "AggreForMessage" target */,
+			);
+			path = AggreForMessage;
+			sourceTree = "<group>";
+		};
+		EF6108CF2E10436C00CB3B0A /* AggreForMessageTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AggreForMessageTests;
+			sourceTree = "<group>";
+		};
+		EF6108D92E10436C00CB3B0A /* AggreForMessageUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AggreForMessageUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF6108B32E10436A00CB3B0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6108C92E10436C00CB3B0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6108D32E10436C00CB3B0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF6108AD2E10436A00CB3B0A = {
+			isa = PBXGroup;
+			children = (
+				EF6108B82E10436A00CB3B0A /* AggreForMessage */,
+				EF6108CF2E10436C00CB3B0A /* AggreForMessageTests */,
+				EF6108D92E10436C00CB3B0A /* AggreForMessageUITests */,
+				EF6108B72E10436A00CB3B0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF6108B72E10436A00CB3B0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF6108B62E10436A00CB3B0A /* AggreForMessage.app */,
+				EF6108CC2E10436C00CB3B0A /* AggreForMessageTests.xctest */,
+				EF6108D62E10436C00CB3B0A /* AggreForMessageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF6108B52E10436A00CB3B0A /* AggreForMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6108DF2E10436C00CB3B0A /* Build configuration list for PBXNativeTarget "AggreForMessage" */;
+			buildPhases = (
+				EF6108B22E10436A00CB3B0A /* Sources */,
+				EF6108B32E10436A00CB3B0A /* Frameworks */,
+				EF6108B42E10436A00CB3B0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EF6108B82E10436A00CB3B0A /* AggreForMessage */,
+			);
+			name = AggreForMessage;
+			packageProductDependencies = (
+			);
+			productName = AggreForMessage;
+			productReference = EF6108B62E10436A00CB3B0A /* AggreForMessage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF6108CB2E10436C00CB3B0A /* AggreForMessageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6108E42E10436C00CB3B0A /* Build configuration list for PBXNativeTarget "AggreForMessageTests" */;
+			buildPhases = (
+				EF6108C82E10436C00CB3B0A /* Sources */,
+				EF6108C92E10436C00CB3B0A /* Frameworks */,
+				EF6108CA2E10436C00CB3B0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF6108CE2E10436C00CB3B0A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EF6108CF2E10436C00CB3B0A /* AggreForMessageTests */,
+			);
+			name = AggreForMessageTests;
+			packageProductDependencies = (
+			);
+			productName = AggreForMessageTests;
+			productReference = EF6108CC2E10436C00CB3B0A /* AggreForMessageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF6108D52E10436C00CB3B0A /* AggreForMessageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6108E72E10436C00CB3B0A /* Build configuration list for PBXNativeTarget "AggreForMessageUITests" */;
+			buildPhases = (
+				EF6108D22E10436C00CB3B0A /* Sources */,
+				EF6108D32E10436C00CB3B0A /* Frameworks */,
+				EF6108D42E10436C00CB3B0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF6108D82E10436C00CB3B0A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EF6108D92E10436C00CB3B0A /* AggreForMessageUITests */,
+			);
+			name = AggreForMessageUITests;
+			packageProductDependencies = (
+			);
+			productName = AggreForMessageUITests;
+			productReference = EF6108D62E10436C00CB3B0A /* AggreForMessageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF6108AE2E10436A00CB3B0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					EF6108B52E10436A00CB3B0A = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					EF6108CB2E10436C00CB3B0A = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = EF6108B52E10436A00CB3B0A;
+					};
+					EF6108D52E10436C00CB3B0A = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = EF6108B52E10436A00CB3B0A;
+					};
+				};
+			};
+			buildConfigurationList = EF6108B12E10436A00CB3B0A /* Build configuration list for PBXProject "AggreForMessage" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF6108AD2E10436A00CB3B0A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EF6108B72E10436A00CB3B0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF6108B52E10436A00CB3B0A /* AggreForMessage */,
+				EF6108CB2E10436C00CB3B0A /* AggreForMessageTests */,
+				EF6108D52E10436C00CB3B0A /* AggreForMessageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF6108B42E10436A00CB3B0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6108CA2E10436C00CB3B0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6108D42E10436C00CB3B0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF6108B22E10436A00CB3B0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6108C82E10436C00CB3B0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6108D22E10436C00CB3B0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF6108CE2E10436C00CB3B0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6108B52E10436A00CB3B0A /* AggreForMessage */;
+			targetProxy = EF6108CD2E10436C00CB3B0A /* PBXContainerItemProxy */;
+		};
+		EF6108D82E10436C00CB3B0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6108B52E10436A00CB3B0A /* AggreForMessage */;
+			targetProxy = EF6108D72E10436C00CB3B0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF6108E02E10436C00CB3B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AggreForMessage/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Woo-Jung.AggreForMessage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF6108E12E10436C00CB3B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AggreForMessage/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Woo-Jung.AggreForMessage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF6108E22E10436C00CB3B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF6108E32E10436C00CB3B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF6108E52E10436C00CB3B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Woo-Jung.AggreForMessageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AggreForMessage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AggreForMessage";
+			};
+			name = Debug;
+		};
+		EF6108E62E10436C00CB3B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Woo-Jung.AggreForMessageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AggreForMessage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AggreForMessage";
+			};
+			name = Release;
+		};
+		EF6108E82E10436C00CB3B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Woo-Jung.AggreForMessageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AggreForMessage;
+			};
+			name = Debug;
+		};
+		EF6108E92E10436C00CB3B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Woo-Jung.AggreForMessageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AggreForMessage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF6108B12E10436A00CB3B0A /* Build configuration list for PBXProject "AggreForMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6108E22E10436C00CB3B0A /* Debug */,
+				EF6108E32E10436C00CB3B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6108DF2E10436C00CB3B0A /* Build configuration list for PBXNativeTarget "AggreForMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6108E02E10436C00CB3B0A /* Debug */,
+				EF6108E12E10436C00CB3B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6108E42E10436C00CB3B0A /* Build configuration list for PBXNativeTarget "AggreForMessageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6108E52E10436C00CB3B0A /* Debug */,
+				EF6108E62E10436C00CB3B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6108E72E10436C00CB3B0A /* Build configuration list for PBXNativeTarget "AggreForMessageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6108E82E10436C00CB3B0A /* Debug */,
+				EF6108E92E10436C00CB3B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF6108AE2E10436A00CB3B0A /* Project object */;
+}
