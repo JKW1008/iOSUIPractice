@@ -66,8 +66,8 @@ extension UIView {
         
         if textField.placeholder == "인증번호 입력" {
             textField.text = String(filteredText.prefix(6))
-        } else {
-            textField.text = filteredText
+        } else if textField.placeholder == "휴대폰 번호(-없이 숫자만 입력)" {
+            textField.text = String(filteredText.prefix(11))
         }
     }
     
