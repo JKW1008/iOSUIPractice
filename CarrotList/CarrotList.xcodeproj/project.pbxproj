@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		EFC5D75F2E1CFE930051B62E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFC5D7402E1CFE920051B62E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFC5D7472E1CFE920051B62E;
+			remoteInfo = CarrotList;
+		};
+		EFC5D7692E1CFE940051B62E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFC5D7402E1CFE920051B62E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFC5D7472E1CFE920051B62E;
+			remoteInfo = CarrotList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFC5D7482E1CFE920051B62E /* CarrotList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrotList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC5D75E2E1CFE930051B62E /* CarrotListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarrotListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC5D7682E1CFE940051B62E /* CarrotListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarrotListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EFC5D7702E1CFE940051B62E /* Exceptions for "CarrotList" folder in "CarrotList" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EFC5D7472E1CFE920051B62E /* CarrotList */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EFC5D74A2E1CFE920051B62E /* CarrotList */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EFC5D7702E1CFE940051B62E /* Exceptions for "CarrotList" folder in "CarrotList" target */,
+			);
+			path = CarrotList;
+			sourceTree = "<group>";
+		};
+		EFC5D7612E1CFE930051B62E /* CarrotListTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CarrotListTests;
+			sourceTree = "<group>";
+		};
+		EFC5D76B2E1CFE940051B62E /* CarrotListUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CarrotListUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFC5D7452E1CFE920051B62E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC5D75B2E1CFE930051B62E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC5D7652E1CFE940051B62E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFC5D73F2E1CFE920051B62E = {
+			isa = PBXGroup;
+			children = (
+				EFC5D74A2E1CFE920051B62E /* CarrotList */,
+				EFC5D7612E1CFE930051B62E /* CarrotListTests */,
+				EFC5D76B2E1CFE940051B62E /* CarrotListUITests */,
+				EFC5D7492E1CFE920051B62E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFC5D7492E1CFE920051B62E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFC5D7482E1CFE920051B62E /* CarrotList.app */,
+				EFC5D75E2E1CFE930051B62E /* CarrotListTests.xctest */,
+				EFC5D7682E1CFE940051B62E /* CarrotListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFC5D7472E1CFE920051B62E /* CarrotList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFC5D7712E1CFE940051B62E /* Build configuration list for PBXNativeTarget "CarrotList" */;
+			buildPhases = (
+				EFC5D7442E1CFE920051B62E /* Sources */,
+				EFC5D7452E1CFE920051B62E /* Frameworks */,
+				EFC5D7462E1CFE920051B62E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EFC5D74A2E1CFE920051B62E /* CarrotList */,
+			);
+			name = CarrotList;
+			packageProductDependencies = (
+			);
+			productName = CarrotList;
+			productReference = EFC5D7482E1CFE920051B62E /* CarrotList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFC5D75D2E1CFE930051B62E /* CarrotListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFC5D7762E1CFE940051B62E /* Build configuration list for PBXNativeTarget "CarrotListTests" */;
+			buildPhases = (
+				EFC5D75A2E1CFE930051B62E /* Sources */,
+				EFC5D75B2E1CFE930051B62E /* Frameworks */,
+				EFC5D75C2E1CFE930051B62E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFC5D7602E1CFE930051B62E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EFC5D7612E1CFE930051B62E /* CarrotListTests */,
+			);
+			name = CarrotListTests;
+			packageProductDependencies = (
+			);
+			productName = CarrotListTests;
+			productReference = EFC5D75E2E1CFE930051B62E /* CarrotListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFC5D7672E1CFE940051B62E /* CarrotListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFC5D7792E1CFE940051B62E /* Build configuration list for PBXNativeTarget "CarrotListUITests" */;
+			buildPhases = (
+				EFC5D7642E1CFE940051B62E /* Sources */,
+				EFC5D7652E1CFE940051B62E /* Frameworks */,
+				EFC5D7662E1CFE940051B62E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFC5D76A2E1CFE940051B62E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EFC5D76B2E1CFE940051B62E /* CarrotListUITests */,
+			);
+			name = CarrotListUITests;
+			packageProductDependencies = (
+			);
+			productName = CarrotListUITests;
+			productReference = EFC5D7682E1CFE940051B62E /* CarrotListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFC5D7402E1CFE920051B62E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					EFC5D7472E1CFE920051B62E = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					EFC5D75D2E1CFE930051B62E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = EFC5D7472E1CFE920051B62E;
+					};
+					EFC5D7672E1CFE940051B62E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = EFC5D7472E1CFE920051B62E;
+					};
+				};
+			};
+			buildConfigurationList = EFC5D7432E1CFE920051B62E /* Build configuration list for PBXProject "CarrotList" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFC5D73F2E1CFE920051B62E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EFC5D7492E1CFE920051B62E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFC5D7472E1CFE920051B62E /* CarrotList */,
+				EFC5D75D2E1CFE930051B62E /* CarrotListTests */,
+				EFC5D7672E1CFE940051B62E /* CarrotListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFC5D7462E1CFE920051B62E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC5D75C2E1CFE930051B62E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC5D7662E1CFE940051B62E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFC5D7442E1CFE920051B62E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC5D75A2E1CFE930051B62E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC5D7642E1CFE940051B62E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFC5D7602E1CFE930051B62E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFC5D7472E1CFE920051B62E /* CarrotList */;
+			targetProxy = EFC5D75F2E1CFE930051B62E /* PBXContainerItemProxy */;
+		};
+		EFC5D76A2E1CFE940051B62E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFC5D7472E1CFE920051B62E /* CarrotList */;
+			targetProxy = EFC5D7692E1CFE940051B62E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EFC5D7722E1CFE940051B62E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarrotList/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Woo-Jung.CarrotList";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFC5D7732E1CFE940051B62E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarrotList/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Woo-Jung.CarrotList";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFC5D7742E1CFE940051B62E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFC5D7752E1CFE940051B62E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFC5D7772E1CFE940051B62E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Woo-Jung.CarrotListTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarrotList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarrotList";
+			};
+			name = Debug;
+		};
+		EFC5D7782E1CFE940051B62E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Woo-Jung.CarrotListTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarrotList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarrotList";
+			};
+			name = Release;
+		};
+		EFC5D77A2E1CFE940051B62E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Woo-Jung.CarrotListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarrotList;
+			};
+			name = Debug;
+		};
+		EFC5D77B2E1CFE940051B62E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kang-Woo-Jung.CarrotListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarrotList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFC5D7432E1CFE920051B62E /* Build configuration list for PBXProject "CarrotList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC5D7742E1CFE940051B62E /* Debug */,
+				EFC5D7752E1CFE940051B62E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFC5D7712E1CFE940051B62E /* Build configuration list for PBXNativeTarget "CarrotList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC5D7722E1CFE940051B62E /* Debug */,
+				EFC5D7732E1CFE940051B62E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFC5D7762E1CFE940051B62E /* Build configuration list for PBXNativeTarget "CarrotListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC5D7772E1CFE940051B62E /* Debug */,
+				EFC5D7782E1CFE940051B62E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFC5D7792E1CFE940051B62E /* Build configuration list for PBXNativeTarget "CarrotListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC5D77A2E1CFE940051B62E /* Debug */,
+				EFC5D77B2E1CFE940051B62E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFC5D7402E1CFE920051B62E /* Project object */;
+}
