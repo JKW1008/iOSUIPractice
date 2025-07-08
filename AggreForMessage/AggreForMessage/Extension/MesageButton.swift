@@ -7,15 +7,23 @@
 
 import UIKit
 
-private struct TimerState {
+private class TimerState {
     var timer: Timer?
     var remainingSeconds: Int
     var originalTitle: String
+    
+    init(timer: Timer? = nil, remainingSeconds: Int, originalTitle: String) {
+        self.timer = timer
+        self.remainingSeconds = remainingSeconds
+        self.originalTitle = originalTitle
+    }
 }
+
+
 
 extension UIView {
     private struct AssociatedKeys {
-        static var timerState = "timerState"
+        static var timerState: UInt8 = 0
     }
     
     private var timerState: TimerState? {
@@ -23,7 +31,7 @@ extension UIView {
             return objc_getAssociatedObject(self, &AssociatedKeys.timerState) as? TimerState
         }
         set {
-            objc_setAssociatedObject(self, &AssociatedKeys.timerState, newValue, .OBJC_ASSOCIATION_RETAIN)
+            objc_setAssociatedObject(self, &AssociatedKeys.timerState, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
     
@@ -60,12 +68,12 @@ extension UIView {
         let filteredText = text.filter { $0.isNumber }
         
         if filteredText.count == 11 {
-            startVerifictionTimer(button: button)
+            startVerificationTimer(button: button)
         }
         
     }
     
-    private func startVerifictionTimer(button: UIButton) {
+    private func startVerificationTimer(button: UIButton) {
         timerState?.timer?.invalidate()
         
         let originalTitle = timerState?.originalTitle ?? (button.title(for: .normal) ?? "인증문자 받기")
@@ -76,7 +84,7 @@ extension UIView {
             originalTitle: originalTitle
         )
         
-        button.isEnabled = true
+        updateTimerDisplay(button: button)
         
         timerState?.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self, weak button] _ in guard let self = self, let button = button else { return }
             self.updateTimerDisplay(button: button)
@@ -84,17 +92,18 @@ extension UIView {
     }
     
     private func updateTimerDisplay(button: UIButton) {
-        guard var state = timerState else { return }
+        guard let state = timerState else { return }
         
         if state.remainingSeconds > 0 {
             let minutes = state.remainingSeconds / 60
             let seconds = state.remainingSeconds % 60
-            let timeText = String(format: "%02분 %02d초", minutes, seconds)
+            let timeText = String(format: "%02d분 %02d초", minutes, seconds)
             
             button.setTitle("인증문자 다시 받기 (\(timeText))", for: .normal)
+            button.isEnabled = false
+            
             
             state.remainingSeconds -= 1
-            timerState = state
         } else {
             state.timer?.invalidate()
             button.setTitle("인증문자 다시 받기", for: .normal)
