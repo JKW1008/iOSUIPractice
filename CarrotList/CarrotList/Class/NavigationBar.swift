@@ -49,12 +49,12 @@ class CustomNavigationBar: UINavigationBar {
             bottomBorder.leadingAnchor.constraint(equalTo: leadingAnchor),
             bottomBorder.trailingAnchor.constraint(equalTo: trailingAnchor),
             bottomBorder.bottomAnchor.constraint(equalTo: bottomAnchor),
-            bottomBorder.heightAnchor.constraint(equalToConstant: 2)
+            bottomBorder.heightAnchor.constraint(equalToConstant: 1)
         ])
     }
     
     private func setupLeftStackView() {
-        localName.text = "조영동"
+        localName.text = "정자동"
         localName.font = UIFont.systemFont(ofSize: screenWidth * 0.05, weight: .heavy)
         underArrow.tintColor = .black
         
