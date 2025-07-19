@@ -75,6 +75,35 @@ class CustomNavigationBar: UIView {
         magnifier.tintColor = .label
     }
     
+    func setTitle(_ title: String) {
+        titleLabel.text = title
+    }
+    
+    func setBackButtonAction(_ action: @escaping () -> Void) {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(backButtonTapped))
+        backArrow.addGestureRecognizer(tapGesture)
+        backArrow.isUserInteractionEnabled = true
+        self.backButtonAction = action
+    }
+    
+    func setSearchButtonAction(_ action: @escaping () -> Void) {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(searchButtonTapped))
+        magnifier.addGestureRecognizer(tapGesture)
+        magnifier.isUserInteractionEnabled = true
+        self.searchButtonAction = action
+    }
+    
+    private var backButtonAction: (() -> Void)?
+    private var searchButtonAction: (() -> Void)?
+    
+    @objc private func backButtonTapped() {
+        backButtonAction?()
+    }
+    
+    @objc private func searchButtonTapped() {
+        searchButtonAction?()
+    }
+    
     private func setupBottomShadow() {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 1)
