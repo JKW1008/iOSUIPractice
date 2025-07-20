@@ -12,6 +12,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setupCustomNavigationBar()
+        setupMenuBar()
         setBackButtonAction {
             print("뒤로가기 버튼 탭됨")
         }
