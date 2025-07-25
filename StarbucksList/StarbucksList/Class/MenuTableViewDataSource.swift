@@ -8,62 +8,65 @@
 import UIKit
 
 class MenuTableViewDataSource: NSObject, UITableViewDataSource {
-    private var menuItems: [ProductItem] = []
     
-    override init() {
-        super.init()
-        loadSampleData()
+    private var menuItems: [ProductItem] = ProductItem.createSampleMenuData()
+    private var isLoading = false
+    
+    weak var tableView: UITableView?
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("📊 Number of menu items: \(menuItems.count)")
+        return menuItems.count
     }
     
-    private func loadSampleData() {
-        menuItems = [
-            ProductItem(
-                id: "purple_sour_blended",
-                name: "퍼플 사워 블렌디드",
-                englishName: "Purple Sour Blended",
-                price: 6300,
-                imageName: "purple_drink",
-                statusBadge: .new,
-                hasHotIcon: true
-            ),
-            ProductItem(
-                id: "coffee_drawing_matcha",
-                name: "커피 드로잉 말차 프라푸치노",
-                englishName: "Coffee Drawing Matcha Frappuccino",
-                price: 6300,
-                imageName: "matcha_drink",
-                statusBadge: .new,
-                hasHotIcon: true
-            ),
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("🔄 Creating cell for row: \(indexPath.row)")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MenuListTableViewCell.identifier, for: indexPath) as? MenuListTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        let menuItem = menuItems[indexPath.row]
+        cell.configure(with: menuItem)
+        return cell
+    }
+    
+    func loadMoreData() {
+        guard !isLoading else { return }
+        
+        isLoading = true
+        print("🔄 Loading more data...")
+        
+        let oldCount = menuItems.count
+        
+        // 실제 앱에서는 서버에서 데이터를 가져오는 로직
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+            guard let self = self else { return }
             
-            ProductItem(
-                id: "dolce_latte",
-                name: "아이스 스타벅스 돌체 라떼",
-                englishName: "Iced Starbucks Dolce Latte",
-                price: 5900,
-                imageName: "dolce_latte",
-                statusBadge: nil,
-                hasHotIcon: false
-            ),
+            let newItems = ProductItem.createMoreMenuData()
+            self.menuItems.append(contentsOf: newItems)
+            self.isLoading = false
             
-            ProductItem(
-                id: "strawberry_yogurt",
-                name: "딸기 딜라이트 요거트 블렌디드",
-                englishName: "Strawberry Delight Yogurt Blended",
-                price: 6300,
-                imageName: "strawberry_drink",
-                statusBadge: .best,
-                hasHotIcon: true
-            ),
-            ProductItem(
-                id: "decaf_americano",
-                name: "아이스 디카페인 카페 아메리카노",
-                englishName: "Iced DECAF Caffe Americano",
-                price: 4800,
-                imageName: "americano",
-                statusBadge: .best,
-                hasHotIcon: false
-            )
-        ]
+            print("✅ Loaded \(newItems.count) more items. Total: \(self.menuItems.count)")
+            
+            // 테이블뷰 업데이트
+            let newCount = self.menuItems.count
+            let indexPaths = (oldCount..<newCount).map { IndexPath(row: $0, section: 0) }
+            
+            DispatchQueue.main.async {
+                self.tableView?.insertRows(at: indexPaths, with: .fade)
+            }
+        }
+    }
+    
+    func shouldLoadMore(for indexPath: IndexPath) -> Bool {
+        let shouldLoad = indexPath.row >= menuItems.count - 3
+        if shouldLoad {
+            print("🚀 Should load more at row: \(indexPath.row), total items: \(menuItems.count)")
+        }
+        return shouldLoad
+    }
+    
+    var itemCount: Int {
+        return menuItems.count
     }
 }

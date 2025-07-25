@@ -7,15 +7,51 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate {
+    
+    var menuDataSource: MenuTableViewDataSource?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupCustomNavigationBar()
         setupMenuBar()
-        setupStoreBar() // 새로 추가!
+        setupStoreBar()
+        setupMenuTableView()  // 여기서 menuDataSource가 설정됨
+        
+        // setupMenuTableView() 호출 후에 delegate 설정
+        if let tableView = getMenuTableView() {
+            tableView.delegate = self
+            print("🔗 Delegate set, DataSource: \(menuDataSource != nil ? "✅" : "❌")")
+        }
         
         setupActions()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UIScreen.main.bounds.height * 0.12
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        print("선택된 메뉴: \(indexPath.row)")
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        print("👀 Will display cell at row: \(indexPath.row)")
+        
+        if let dataSource = getMenuDataSource() {
+            print("📊 Current total items: \(dataSource.itemCount)")
+            
+            if dataSource.shouldLoadMore(for: indexPath) {
+                print("🚀 Triggering load more data!")
+                dataSource.loadMoreData()
+            } else {
+                print("⏸️ Not loading more yet (row \(indexPath.row) < \(dataSource.itemCount - 3))")
+            }
+        } else {
+            print("❌ DataSource not found!")
+        }
     }
     
     private func setupActions() {
@@ -41,4 +77,6 @@ class ViewController: UIViewController {
         setCartCount(0)
         setStoreName("") // 기본 텍스트
     }
+    
+    
 }
