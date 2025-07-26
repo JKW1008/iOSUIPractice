@@ -40,7 +40,8 @@ class ViewController: UIViewController, UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         print("👀 Will display cell at row: \(indexPath.row)")
         
-        if let dataSource = getMenuDataSource() {
+        // tableView의 dataSource를 직접 사용
+        if let dataSource = tableView.dataSource as? MenuTableViewDataSource {
             print("📊 Current total items: \(dataSource.itemCount)")
             
             if dataSource.shouldLoadMore(for: indexPath) {
@@ -50,7 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate {
                 print("⏸️ Not loading more yet (row \(indexPath.row) < \(dataSource.itemCount - 3))")
             }
         } else {
-            print("❌ DataSource not found!")
+            print("❌ DataSource not found in tableView!")
         }
     }
     

@@ -18,7 +18,15 @@ extension UIViewController {
         
         dataSource.tableView = tableView
         
-        objc_setAssociatedObject(self, "menuDataSource", dataSource, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+//        objc_setAssociatedObject(self, "menuDataSource", dataSource, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        
+        // ViewController에 직접 할당
+        if let viewController = self as? ViewController {
+            viewController.menuDataSource = dataSource
+            print("✅ MenuDataSource assigned to ViewController")
+        } else {
+            print("❌ Failed to cast to ViewController")
+        }
         
         // 중요: TableView에 tag 설정
         tableView.tag = 999
